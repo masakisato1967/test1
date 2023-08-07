@@ -8,6 +8,9 @@ import requests
 import zipfile
 import streamlit as st
 
+f = open('csv_data/your_token.txt', 'r')
+mapbox_access_token = f.read()
+f.close()
 
 # 現在の運行データを取得する
 file_url = "http://opendata.sagabus.info/saga-current.zip"
