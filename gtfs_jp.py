@@ -10,13 +10,7 @@ import streamlit as st
 
 
 
-for i, row in df_new.iterrows():
-    folium.Marker(
-        location=[row['latitude'], row['longitude']],
-        popup=row['trip_headsign'],
-        icon=folium.Icon(color='red')
-    ).add_to(folium_map)
-folium_map
+
 
 
 # 現在の運行データを取得する
