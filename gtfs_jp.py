@@ -9,10 +9,6 @@ import zipfile
 import streamlit as st
 
 
-
-
-
-
 # 現在の運行データを取得する
 file_url = "http://opendata.sagabus.info/saga-current.zip"
 
