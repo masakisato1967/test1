@@ -8,9 +8,7 @@ import requests
 import zipfile
 import streamlit as st
 
-lat = df_new['latitude'].mean()
-lon = df_new['longitude'].mean()
-folium_map = folium.Map(location=[lat,lon], zoom_start=12)
+
 
 for i, row in df_new.iterrows():
     folium.Marker(
