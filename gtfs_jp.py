@@ -8,7 +8,7 @@ import requests
 import zipfile
 import streamlit as st
 
-f = open('csv_data/your_token.txt', 'r')
+f = open('csv_data/pk.eyJ1IjoibWFzYWtpc2F0bzE5NjciLCJhIjoiY2xrbDI2MTJ3MDFnODNyczhtZ2xwdzI2NiJ9.72AG5HWAj1K9UAI5mi02Yw', 'r')
 mapbox_access_token = f.read()
 f.close()
 
