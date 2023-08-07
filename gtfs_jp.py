@@ -105,10 +105,3 @@ st.write('http://www.bus.saga.saga.jp/index.php')
 
 
 
-if status:
-    figure_map(dataframe)
-    st.write('GTFSデータの取得先は以下のとおりです。データ提供者サーバーの負担を軽減するため、本ページの高頻度での更新はご遠慮ください。')
-    st.write('【静的データ公開事業者】')
-    st.write('・佐賀市交通局・祐徳自動車株式会社・昭和自動車株式会社・佐賀市・嬉野市')
-    st.write('【動的データ公開事業者】')
-    st.write('・佐賀市交通局・祐徳自動車株式会社・昭和自動車株式会社')
