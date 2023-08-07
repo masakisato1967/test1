@@ -49,7 +49,7 @@ def get_realtime_data():
                  'longitude': entity.vehicle.position.longitude,
                  "current_stop_sequence": entity.vehicle.current_stop_sequence,
                  "timestamp": entity.vehicle.timestamp, "vehicle_id": entity.vehicle.vehicle.id})
-            df_vehicle = df_vehicle.append(vehicle_data, ignore_index=True)
+            
     else:
         realtime_data_message = "Out of service"
         status = False
@@ -103,8 +103,7 @@ def figure_map(data_frame):
 st.write('佐賀県の路線バス情報')
 st.write('http://www.bus.saga.saga.jp/index.php')
 
-status,message, dataframe = get_realtime_data()
-st.write('現在の運行状況：' + message)
+
 
 if status:
     figure_map(dataframe)
